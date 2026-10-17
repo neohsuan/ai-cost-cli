@@ -1,0 +1,18 @@
+{
+  "providers": {
+    "openai": {
+      "monthlyBudget": 100,
+      "currency": "USD",
+      "thresholds": [0.8, 1]
+    },
+    "vertex": {
+      "monthlyBudget": 200,
+      "currency": "USD",
+      "thresholds": [0.8, 1],
+      "table": "my-gcp-project.billing.gcp_billing_export_v1_XXXXXX_XXXXXX_XXXXXX",
+      "projectId": "my-gcp-project",
+      "location": "US",
+      "maximumBytesBilled": "10000000000"
+    }
+  }
+}

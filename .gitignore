@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.ai-cost.json
+ai-cost.config.json
+*.log
+credentials*.json
+*-credentials.json
+service-account*.json
+.DS_Store

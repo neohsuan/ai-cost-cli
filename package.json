@@ -1,0 +1,37 @@
+{
+  "name": "ai-cost-cli",
+  "version": "1.0.0",
+  "description": "Monitor OpenAI and Vertex AI monthly costs and budget alerts",
+  "type": "module",
+  "bin": {
+    "ai-cost-cli": "dist/main.js"
+  },
+  "files": [
+    "dist",
+    "ai-cost.config.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "start": "node dist/main.js",
+    "prepack": "npm run build"
+  },
+  "license": "MIT",
+  "author": "neohsuan",
+  "dependencies": {
+    "@google-cloud/bigquery": "^8.0.0",
+    "commander": "^13.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.0"
+  }
+}
